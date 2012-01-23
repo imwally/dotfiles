@@ -1,5 +1,5 @@
 syntax on
 set cursorline
-set background=dark
+set background=light
 set number
 set tabstop=2

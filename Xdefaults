@@ -1,6 +1,6 @@
 ! amazing colors
-xterm*background: #000000
-xterm*foreground: #FFFFFF
+xterm*background: #FFFFFF
+xterm*foreground: #333333
 
 ! scrollage
 xterm*saveLines: 5000
