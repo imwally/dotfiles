@@ -6,3 +6,7 @@ xterm*foreground: #FFFFFF
 xterm*saveLines: 5000
 xterm*scrollBar: true
 xterm*scrollbar*width: 8
+
+! beautiful man... pages
+*VT100*colorBDMode: on
+*VT100*colorBD: cyan 
