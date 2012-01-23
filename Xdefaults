@@ -1,0 +1,8 @@
+! amazing colors
+xterm*background: #000000
+xterm*foreground: #FFFFFF
+
+! scrollage
+xterm*saveLines: 5000
+xterm*scrollBar: true
+xterm*scrollbar*width: 8
