@@ -1,12 +1,15 @@
 ! amazing colors
-xterm*background: #FFFFFF
-xterm*foreground: #333333
+xterm*background: #000000
+xterm*foreground: #666666
 
 ! scrollage
 xterm*saveLines: 5000
 xterm*scrollBar: true
-xterm*scrollbar*width: 8
+xterm*scrollbar*width: 5 
 
 ! beautiful man... pages
 *VT100*colorBDMode: on
-*VT100*colorBD: cyan 
+*VT100*colorBD: green 
+*VT100*colorULMode: off 
+*VT100*underline: off
+
