@@ -1,8 +1,8 @@
-# name@host (current dir)
+# name on host in curdir 
 PROMPT='%B%n%b on %B%m%b in %B%~%b '
 
-# set TERM=screen-256color for proper white in tmux
-TERM=screen-256color
+# set TERM=xterm-256color for proper white in tmux
+TERM=xterm-256color
 export TERM
 
 # aliases
