@@ -11,6 +11,10 @@ alias ll="ls -laF"
 alias ik="open -a /Volumes/IronKey/IronKey.app"
 pkg_find() { curl -s ftp://ftp.openbsd.org/pub/OpenBSD/`uname -r`/packages/`uname -m`/ | grep -i "$*" | awk '{print $9}'; }
 
+# Go
+export GOPATH=$HOME/Code/go/
+export PATH=$PATH:$GOPATH/bin
+
 # PKG_PATH
 PKG_PATH=ftp://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/
 export PKG_PATH
