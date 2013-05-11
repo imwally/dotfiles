@@ -1,0 +1,19 @@
+# Increase brightness
+"xbacklight -inc 10"
+		m:0x0 + c:233
+		XF86MonBrightnessUp
+
+# Decrease brightness
+"xbacklight -dec 10"
+		m:0x0 + c:232
+		XF86MonBrightnessUp
+
+# Decrease volume
+"amixer set Master playback 1-"
+    m:0x0 + c:122
+    XF86AudioLowerVolume
+
+# Increase volume
+"amixer set Master playback 1+"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume
