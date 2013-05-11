@@ -1,15 +1,12 @@
+! fonts
+xterm*faceName: Ubuntu Mono 
+xterm*faceSize: 9 
+
 ! amazing colors
-xterm*background: #000000
-xterm*foreground: #888888
+xterm*background: #FFFFFF
+xterm*foreground: #444444
 
 ! scrollage
 xterm*saveLines: 5000
 xterm*scrollBar: true
-xterm*scrollbar*width: 5 
-
-! beautiful man... pages
-*VT100*colorBDMode: on
-*VT100*colorBD: green 
-*VT100*colorULMode: off 
-*VT100*underline: off
-
+xterm*scrollbar*width: 1  
