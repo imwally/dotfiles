@@ -5,6 +5,9 @@ PROMPT='%B%n%b on %B%m%b in %B%~%b '
 TERM=xterm-256color
 export TERM
 
+# sane ls sortin
+export LC_ALL=C
+
 # aliases
 alias l="ls -l"
 alias ll="ls -laF"
