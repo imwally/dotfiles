@@ -8,3 +8,6 @@ xterm*foreground: #000000
 
 ! scrollage
 xterm*saveLines: 5000
+
+! cursor
+xterm*cursorBlink: true
