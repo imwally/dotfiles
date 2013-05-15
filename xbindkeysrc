@@ -9,11 +9,11 @@
 		XF86MonBrightnessUp
 
 # Decrease volume
-"amixer set Master playback 1-"
+"amixer set Master playback 5-"
     m:0x0 + c:122
     XF86AudioLowerVolume
 
 # Increase volume
-"amixer set Master playback 1+"
+"amixer set Master playback 5+"
     m:0x0 + c:123
     XF86AudioRaiseVolume
