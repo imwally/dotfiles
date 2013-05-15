@@ -16,7 +16,7 @@ pkg_find() { curl -s ftp://ftp.openbsd.org/pub/OpenBSD/`uname -r`/packages/`unam
 
 # Go
 export GOPATH=$HOME/Code/go/
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 
 # PKG_PATH
 PKG_PATH=ftp://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/
