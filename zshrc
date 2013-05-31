@@ -2,7 +2,7 @@
 PROMPT='%B%n%b on %B%m%b in %B%~%b '
 
 # set TERM=xterm-256color for proper white in tmux
-TERM=xterm-256color
+TERM=screen-256color
 export TERM
 
 # sane ls sortin
