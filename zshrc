@@ -42,3 +42,5 @@ HISTFILE=
 HISTSIZE=500
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
