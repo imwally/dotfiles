@@ -31,3 +31,5 @@ export PKG_PATH
 HISTFILE=
 HISTSIZE=500
 zstyle ':completion:*' special-dirs true
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
