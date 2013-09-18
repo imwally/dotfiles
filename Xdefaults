@@ -1,6 +1,6 @@
 ! fonts
-xterm*faceName: Ubuntu Mono
-xterm*faceSize: 9
+xterm*faceName: Dejavu Sans Mono
+xterm*faceSize: 8
 
 ! amazing colors
 xterm*background: #FFFFFF
