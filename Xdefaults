@@ -1,6 +1,6 @@
 ! fonts
-xterm*faceName: Dejavu Sans Mono
-xterm*faceSize: 8
+!xterm*faceName: Ubuntu Mono
+!xterm*faceSize: 10 
 
 ! amazing colors
 xterm*background: #FFFFFF
@@ -8,6 +8,7 @@ xterm*foreground: #000000
 
 ! scrollage
 xterm*saveLines: 5000
+xterm*scrollBar: false
 
 ! cursor
 xterm*cursorBlink: true
