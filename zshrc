@@ -15,7 +15,7 @@ alias ik="open -a /Volumes/IronKey/IronKey.app"
 
 # little programs
 pkg_find() { 
-	curl -s ftp://ftp.openbsd.org/pub/OpenBSD/`uname -r`/packages/`uname -m`/ \
+	curl -s ftp://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/ \
 	| grep -i "$*" | awk '{print $9}'; 
 }
 
@@ -24,7 +24,7 @@ export GOPATH=$HOME/Code/go/
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 
 # PKG_PATH
-PKG_PATH=ftp://ftp.openbsd.org/pub/OpenBSD/`uname -r`/packages/`uname -m`/
+PKG_PATH=ftp://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/
 export PKG_PATH
 
 # actual zsh stuff
