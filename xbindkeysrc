@@ -1,19 +1,27 @@
 # Increase brightness
-"xbacklight -inc 20 -steps 0"
-XF86MonBrightnessUp
+"xbacklight -inc 20%"
+  XF86MonBrightnessUp
 
 # Decrease brightness
-"xbacklight -dec 20 -steps 0"
-XF86MonBrightnessDown
+"xbacklight -dec 20%"
+  XF86MonBrightnessDown
 
 # Decrease volume
-"amixer set Master playback 5-"
-XF86AudioLowerVolume
+"amixer set Master playback 5%-"
+  XF86AudioLowerVolume
 
 # Increase volume
-"amixer set Master playback 5+"
-XF86AudioRaiseVolume
+"amixer set Master playback 5%+"
+  XF86AudioRaiseVolume
 
 # cmus pause 
 "cmus-remote -u"
-XF86AudioPlay
+  XF86AudioPlay
+
+# cmus next 
+"cmus-remote -n"
+  XF86AudioNext
+
+# cmus prev 
+"cmus-remote -r"
+  XF86AudioPrev
