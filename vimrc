@@ -5,4 +5,4 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-highlight LineNr ctermfg=grey ctermbg=white
+highlight LineNr ctermfg=darkgrey

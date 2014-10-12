@@ -1,9 +1,9 @@
 ! fonts
-xterm*faceName: dejavu sans mono:medium:size=9
+!xterm*faceName: dejavu sans mono:medium:size=9
 
 ! amazing colors
-xterm*background: #FFFFFF
-xterm*foreground: #000000
+xterm*background: #111111
+xterm*foreground: #9E9E9E
 
 ! scrollage
 xterm*saveLines: 5000
