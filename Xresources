@@ -1,0 +1,22 @@
+! fonts
+xterm*faceName: dejavu sans mono:medium:size=9
+
+! amazing colors
+xterm*background: #FFFFFF
+xterm*foreground: #000000
+
+! scrollage
+xterm*saveLines: 5000
+xterm*scrollBar: false
+
+! cursor
+xterm*cursorBlink: true
+
+! screen stuff
+Xft.dpi: 120
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting: 0 
+Xft.antialias: 1
+Xft.rgba: rgb
