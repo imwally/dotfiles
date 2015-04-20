@@ -1,5 +1,5 @@
 # name on host in curdir 
-PROMPT='%B%n%b on %B%m%b in %B%~%b '
+PROMPT='%B%n%b@%B%m%b (%B%~%b) '
 
 # set TERM=xterm-256color for proper white in tmux
 TERM=screen-256color
