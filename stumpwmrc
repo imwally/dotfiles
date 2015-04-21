@@ -1,0 +1,15 @@
+(in-package :stumpwm)
+
+;; Message window
+(set-font "-*-terminus-*-*-*-*-20-*-72-72-*-*-*-*")
+(set-border-color "black")
+
+;; Mode line
+(setf *mode-line-background-color* "black"
+      *mode-line-foreground-color* "grey"
+      *mode-line-border-width* 0
+      *mode-line-border-height* 0
+      *screen-mode-line-format*
+	(list '(:eval (stumpwm:run-shell-command "date \"+%a %b %d %R\"" t))))
+
+(mode-line)
