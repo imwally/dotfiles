@@ -31,5 +31,5 @@
       *normal-border-width* 4
       *window-border-style* :tight)
 
-(set-focus-color "cyan")
+(set-focus-color "magenta")
 (set-unfocus-color "gray")
