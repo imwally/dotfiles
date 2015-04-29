@@ -1,5 +1,7 @@
 ! fonts
-xterm*faceName: dejavu sans mono:medium:size=9
+xterm*faceName: xft:dejavu sans mono:pixelsize=16
+!xterm*font: -*-clean-*-*-*-*-17-*-*-*-*-*-*-* 
+
 
 ! amazing colors
 xterm*background: #FFFFFF
@@ -13,10 +15,10 @@ xterm*scrollBar: false
 xterm*cursorBlink: true
 
 ! screen stuff
-Xft.dpi: 120
+Xft.dpi: 130
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintslight
+Xft.hintstyle:  hintmedium
 Xft.hinting: 0 
 Xft.antialias: 1
 Xft.rgba: rgb
