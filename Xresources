@@ -1,7 +1,6 @@
 ! fonts
-xterm*faceName: xft:dejavu sans mono:pixelsize=16
-!xterm*font: -*-clean-*-*-*-*-17-*-*-*-*-*-*-* 
-
+!xterm*faceName: xft:dejavu sans mono:pixelsize=16
+!xterm*font: -*-clean-*-*-*-*-14-*-*-*-*-*-*-* 
 
 ! amazing colors
 xterm*background: #FFFFFF
@@ -15,10 +14,10 @@ xterm*scrollBar: false
 xterm*cursorBlink: true
 
 ! screen stuff
-Xft.dpi: 130
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintmedium
-Xft.hinting: 0 
-Xft.antialias: 1
-Xft.rgba: rgb
+!Xft.dpi: 130
+!Xft.autohint: 1
+!Xft.lcdfilter:  lcddefault
+!Xft.hintstyle:  hintslight
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.rgba: rgb
