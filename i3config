@@ -30,7 +30,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -nb black -sb grey -sf black -nf white -fn "-xos4-terminus-medium-r-*-*-12-*" 
+bindsym $mod+d exec dmenu_run -nb black -sb white -sf black -nf white -fn "-xos4-terminus-medium-r-*-*-18-*" 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -158,11 +158,12 @@ bar {
         statusline #FFFFFF
         separator  #000000
 
-        focused_workspace  #ffffff #000000
-        active_workspace   #ffffff #333333
-        inactive_workspace #888888 #222222
-        urgent_workspace   #ffffff #900000
+        focused_workspace  #ffffff #ffffff #000000
+        active_workspace   #00ff00 #000000 #666666
+        inactive_workspace #000000 #000000 #888888
+        urgent_workspace   #ff0000 #ff0000 #ffffff
     }
+
 }
 
 # remove titlebars on windows
@@ -170,3 +171,4 @@ for_window [class="^.*"] border pixel none
 
 # remove borders
 new_window none
+
