@@ -1,0 +1,16 @@
+set padding 10 60 10 10
+set border 4
+
+set bgcolor black
+set fgcolor white
+
+set barpadding 10 10
+set barborder 0
+set bargravity nw
+set barinpadding 1
+
+set fwcolor cyan
+
+unmanage xfce4-panel
+unmanage xfce4-notifyd
+ 
