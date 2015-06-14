@@ -22,7 +22,7 @@ order += "battery 0"
 order += "tztime local"
 
 wireless wlan0 {
-        format_up = "NET (%quality at %essid) %ip    "
+        format_up = "NET %quality    "
         format_down = "NET disconnected    "
 }
 
@@ -33,7 +33,7 @@ ethernet eth0 {
 }
 
 battery 0 {
-        format = "%status %percentage %remaining    "
+        format = "%status %percentage    "
 }
 
 run_watch DHCP {
