@@ -21,7 +21,7 @@
     #   %I  iconname (without its path)
     #   %p  progress value if set ([  0%] to [100%]) or nothing
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
+    format = "<b>%a</b>\n%b\n%p"
     
     # Sort messages by urgency.
     sort = yes
@@ -64,7 +64,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-7+25"
+    geometry = "300x5-10+25"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -142,14 +142,15 @@
     browser = /usr/bin/firefox -new-tab
 
     # Align icons left/right/off
-    icon_position = off
+    icon_position = left
 
     # Paths to default icons.
-    icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_folders = /home/wally/.icons/Faba-Mono/24x24/status:/home/wally/.icons/Moka/24x24/devices
+
 
 [frame]
     width = 0
-    color = "#aaaaaa"
+    color = "#000000"
 
 [shortcuts]
 
@@ -175,8 +176,8 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#EEEEEE"
-    foreground = "#888888"
+    background = "#000000"
+    foreground = "#ffffff"
     timeout = 10
 
 [urgency_normal]
