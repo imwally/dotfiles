@@ -24,7 +24,7 @@ xrdb -merge ~/.Xresources &
 #export SSH_AUTH_SOCK
 
 # wallpaper
-sh ~/.fehbg &
+#sh ~/.fehbg &
 
 # screensaver
 #/usr/bin/xscreensaver --no-splash &
