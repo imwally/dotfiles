@@ -1,5 +1,5 @@
-set padding 10 46 10 10
-set border 6 
+set padding 0 50 0 0
+set border 7 
 
 set bgcolor black
 set fgcolor white
@@ -16,3 +16,12 @@ unmanage xfce4-notifyd
 
 bind c exec xterm
 bind f exec firefox
+
+definekey top M-Tab focus
+definekey top M-ISO_Left_Tab focusprev
+
+definekey top M-1 exec rpws 1
+definekey top M-2 exec rpws 2
+definekey top M-3 exec rpws 3
+definekey top M-4 exec rpws 4
+exec /usr/bin/rpws init 4 -k
