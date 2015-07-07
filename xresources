@@ -1,5 +1,5 @@
 ! fonts
-xterm*faceName: xft:monospace:pixelsize=16
+xterm*faceName: xft:monospace:pixelsize=15
 !xterm*font: -*-fixed-medium-*-*-*-18-*-*-*-*-*-*-* 
 
 ! amazing colors

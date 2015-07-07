@@ -1,10 +1,6 @@
 # name on host in curdir 
 PROMPT='%B%n%b@%B%m%b (%B%~%b) '
 
-# set TERM=xterm-256color for proper white in tmux
-TERM=xterm-256color
-export TERM
-
 # sane ls sortin
 export LC_ALL=C
 
