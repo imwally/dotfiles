@@ -1,6 +1,9 @@
 # name on host in curdir 
 PROMPT='%B%n%b@%B%m%b (%B%~%b) '
 
+# term
+export TERM=screen-256color
+
 # sane ls sortin
 export LC_ALL=C
 
@@ -28,7 +31,6 @@ export LESSHISTFILE=-
 
 # actual zsh stuff
 HISTFILE=
-HISTSIZE=500
 zstyle ':completion:*' special-dirs true
 autoload -Uz compinit
 compinit
