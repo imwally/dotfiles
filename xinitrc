@@ -4,6 +4,9 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
  
+#d isable touchpad 
+xinput set-prop 10 "Device Enabled" 0
+
 # swap control and caps lock
 /usr/bin/xmodmap ~/.xmodmap &
 
@@ -11,29 +14,35 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 #xbindkeys -f ~/.xbindkeysrc
 
 # normal pointer please
-#xsetroot -cursor_name left_ptr &
+xsetroot -cursor_name left_ptr &
 
 # x settings
 xrdb -merge ~/.xresources &
 
 # don't blind me
-#xbacklight -set 20
+xbacklight -set 20
 
 # ssh
-#eval $(ssh-agent)
-#export SSH_AUTH_SOCK
+eval $(ssh-agent)
 
 # wallpaper
-#sh ~/.fehbg &
+sh ~/.fehbg &
 
-# screensaver
-#/usr/bin/xscreensaver --no-splash &
+# screensaver / locker
+xscreensaver -no-splash &
+xss-lock -- xscreensaver-command --lock &
 
 # term
 export TERM=xterm
 
 # compositor
-compton &
+#compton &
+
+# power manager
+xfce4-power-manager &
+
+# volume control
+xfce4-volumed &
 
 # window manager
-exec /usr/bin/ratpoison
+exec /usr/bin/i3
