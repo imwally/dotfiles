@@ -20,7 +20,7 @@ pkg_find() {
 
 # Go
 export GOPATH=$HOME/code/go/
-export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin:$HOME/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin:$HOME/Apps/bin
 
 # PKG_PATH
 PKG_PATH=ftp://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/

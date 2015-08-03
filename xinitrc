@@ -4,8 +4,8 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
  
-#d isable touchpad 
-xinput set-prop 10 "Device Enabled" 0
+# disable touchpad (x1 carbon)
+#xinput set-prop 10 "Device Enabled" 0
 
 # swap control and caps lock
 /usr/bin/xmodmap ~/.xmodmap &
@@ -23,7 +23,8 @@ xrdb -merge ~/.xresources &
 xbacklight -set 20
 
 # ssh
-eval $(ssh-agent)
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 # wallpaper
 sh ~/.fehbg &
@@ -35,14 +36,17 @@ xss-lock -- xscreensaver-command --lock &
 # term
 export TERM=xterm
 
-# compositor
-#compton &
-
 # power manager
 xfce4-power-manager &
 
+# network manager
+nm-applet &
+
 # volume control
 xfce4-volumed &
+
+# git annex
+git annex assistant --autostart &
 
 # window manager
 exec /usr/bin/i3
