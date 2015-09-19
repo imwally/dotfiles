@@ -1,10 +1,10 @@
 ! fonts
-xterm*faceName: Dejavu Sans Mono:pixelsize=11
+!xterm*faceName: DejaVu Sans Mono:style=Book:antialias=false:pixelsize=14
 !xterm*font: -*-fixed-medium-*-*-*-18-*-*-*-*-*-*-* 
 
 ! amazing colors
-xterm*background: #FFFFFF
-xterm*foreground: #333333
+xterm*background: #000000
+xterm*foreground: #FFFFFF
 
 ! scrollage
 xterm*saveLines: 5000
