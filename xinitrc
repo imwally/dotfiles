@@ -39,9 +39,6 @@ export TERM=xterm
 # power manager
 xfce4-power-manager &
 
-# network manager
-nm-applet &
-
 # volume control
 xfce4-volumed &
 
@@ -49,4 +46,4 @@ xfce4-volumed &
 git annex assistant --autostart &
 
 # window manager
-exec /usr/bin/i3
+exec /usr/bin/spectrwm
