@@ -8,7 +8,7 @@ export TERM=screen-256color
 export LC_ALL=C
 
 # Go
-export GOPATH=$HOME/code/go/
+export GOPATH=$HOME/Code/go/
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin:$HOME/Apps/bin
 
 # turn off lesshst
