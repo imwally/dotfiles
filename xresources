@@ -2,9 +2,9 @@
 !xterm*faceName: DejaVu Sans Mono:style=Book:antialias=false:pixelsize=14
 !xterm*font: -*-fixed-medium-*-*-*-18-*-*-*-*-*-*-* 
 
-! amazing colors
-xterm*background: #000000
-xterm*foreground: #FFFFFF
+! colors
+xterm*background:		#FFFFFF
+xterm*foreground:		#303030
 
 ! scrollage
 xterm*saveLines: 5000
