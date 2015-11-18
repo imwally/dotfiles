@@ -45,5 +45,8 @@ xfce4-volumed &
 # git annex
 git annex assistant --autostart &
 
+# for dmenu
+export PATH="$PATH:$HOME/Apps/bin"
+
 # window manager
 exec /usr/bin/spectrwm
