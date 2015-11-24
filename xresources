@@ -1,5 +1,5 @@
 ! fonts
-!xterm*faceName: DejaVu Sans Mono:style=Book:antialias=false:pixelsize=14
+xterm*faceName: DejaVu Sans Mono:pixelsize=11
 !xterm*font: -*-fixed-medium-*-*-*-18-*-*-*-*-*-*-* 
 
 ! colors
