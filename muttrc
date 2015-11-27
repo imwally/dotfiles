@@ -1,0 +1,33 @@
+# mailbox
+set mbox_type = Maildir
+set spoolfile = "~/Mail/"
+set folder    = "~/Mail/"
+
+# basic colors
+color normal        black	    default         
+color error         red             default         
+color tilde         black           default         
+color message       cyan            default         
+color markers       red             white           
+color attachment    white           default         
+color search        brightmagenta   default
+color signature     black 	    default
+color status        brightblack	    default
+color indicator     brightwhite	    cyan
+color tree          cyan	    default
+
+# header colors
+color hdrdefault    black	    white
+
+# quote colors
+color quoted        blue            default         
+color quoted1       cyan            default         
+color quoted2       yellow          default         
+color quoted3       red             default         
+color quoted4       brightred       default
+
+# mono colors
+mono  bold          bold
+mono  underline     underline
+mono  indicator     reverse
+mono  error         bold
