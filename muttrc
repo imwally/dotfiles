@@ -1,7 +1,7 @@
 # mailbox
 set mbox_type = Maildir
 set spoolfile = "~/Mail/"
-set folder    = "~/Mail/"
+set folder    = "~/Mail/Inbox"
 
 # basic colors
 color normal        black	    default         

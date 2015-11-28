@@ -1,0 +1,17 @@
+IMAPAccount imwally.net
+Host mail.gandi.net
+User wally@imwally.net
+UseIMAPS yes
+
+IMAPStore imwally.net-remote
+Account imwally.net
+
+MaildirStore imwally.net-local
+Path ~/Mail/
+Inbox ~/Mail/Inbox
+
+Channel imwally.net
+Master :imwally.net-remote:
+Slave :imwally.net-local:
+Patterns *
+Create Both
