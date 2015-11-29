@@ -1,7 +1,7 @@
 # mailbox
 set mbox_type = Maildir
+set folder    = "~/Mail/"
 set spoolfile = "~/Mail/Inbox"
-set folder    = "~/Mail/Inbox"
 
 # view
 unset help				# Remove top help menu
