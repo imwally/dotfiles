@@ -1,7 +1,14 @@
 # mailbox
 set mbox_type = Maildir
-set spoolfile = "~/Mail/"
+set spoolfile = "~/Mail/Inbox"
 set folder    = "~/Mail/Inbox"
+
+# view
+unset help				# Remove top help menu
+set pager_index_lines = 10		# Split index / messages horizontally
+set pager_context = 3 			# Leave a 3 line buffer between index / messages
+set markers = no    			# Remove wrap markers
+set wrap = 80 				# Wrap all messages at 80 cols
 
 # basic colors
 color normal        black	    default         
