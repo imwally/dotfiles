@@ -1,6 +1,7 @@
 IMAPAccount imwally.net
 Host mail.gandi.net
 User wally@imwally.net
+PassCmd "cat ~/.mailpass"
 UseIMAPS yes
 
 IMAPStore imwally.net-remote
