@@ -8,8 +8,8 @@ set realname = "Wally Jones"
 set from = "wally@imwally.net"
 set record = +Sent
 set postponed = +Drafts
-set editor = emacs
-set sendmail="/usr/bin/msmtp"
+set editor = "/usr/bin/emacs -nw"
+set sendmail = "/usr/bin/msmtp"
 
 # viewing mail
 unset help				# Remove top help menu
