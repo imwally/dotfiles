@@ -3,7 +3,15 @@ set mbox_type = Maildir
 set folder    = "~/Mail/"
 set spoolfile = "~/Mail/Inbox"
 
-# view
+# sending mail
+set realname = "Wally Jones"
+set from = "wally@imwally.net"
+set record = +Sent
+set postponed = +Drafts
+set editor = emacs
+set sendmail="/usr/bin/msmtp"
+
+# viewing mail
 unset help				# Remove top help menu
 set pager_index_lines = 10		# Split index / messages horizontally
 set pager_context = 3 			# Leave a 3 line buffer between index / messages
