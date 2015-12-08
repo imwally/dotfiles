@@ -19,6 +19,9 @@ set markers = no    			# Remove wrap markers
 set wrap = 80 				# Wrap all messages at 80 cols
 set index_format = "%Z %-20.20L    %.60s %> %{%b %d}"
 
+# archive mail
+macro index A ":set confirmappend=no delete=yes\n<save-message>=Archives.`date +%Y`\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+
 # basic colors
 color normal        black	    default         
 color error         red             default         
