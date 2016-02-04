@@ -7,8 +7,11 @@ export TERM=screen-256color
 # sane ls sortin
 export LC_ALL=C
 
+# better man pages
+alias man='TERM=xterm-256color COLUMNS=80 man'
+
 # Go
-export GOPATH=$HOME/Code/go/
+export GOPATH=$HOME/Code/go
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin:$HOME/Apps/bin
 
 # turn off lesshst
@@ -19,5 +22,3 @@ HISTFILE=
 zstyle ':completion:*' special-dirs true
 autoload -Uz compinit
 compinit
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
