@@ -26,6 +26,9 @@ xbacklight -set 20
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
+# gpg
+eval $(gpg-agent --daemon)
+
 # wallpaper
 sh ~/.fehbg &
 
