@@ -33,7 +33,7 @@ color attachment    white           default
 color search        brightmagenta   default
 color signature     black 	    default
 color status        brightblack	    default
-color indicator     brightwhite	    cyan
+color indicator     brightblue	    default
 color tree          cyan	    default
 
 # header colors
