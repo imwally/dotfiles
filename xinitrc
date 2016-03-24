@@ -45,9 +45,6 @@ xfce4-power-manager &
 # volume control
 xfce4-volumed &
 
-# git annex
-git annex assistant --autostart &
-
 # for dmenu
 export PATH="$PATH:$HOME/Apps/bin"
 
