@@ -1,67 +1,10 @@
 ! fonts
-xterm*faceName: DejaVu Sans Mono:pixelsize=11
+!xterm*faceName: DejaVu Sans Mono:pixelsize=11
 !xterm*font: -*-fixed-medium-*-*-*-18-*-*-*-*-*-*-* 
 
 ! colors
-!xterm*background:		#FFFFFF
-!xterm*foreground:		#303030
-
-! flatui color theme
-#define turquoise     #1ABC9C
-#define green_sea     #16A085
-#define emerald       #2ECC71
-#define nephritis     #27AE60
-#define peter_river   #3498DB
-#define belize_hole   #2980B9
-#define amethyst      #9B59B6
-#define wisteria      #8E44AD
-#define wet_asphalt   #34495E
-#define midnight_blue #2C3E50
-#define sun_flower    #F1C40F
-#define orange        #FC9C12
-#define carrot        #E67E22
-#define pumpkin       #DC5400
-#define alizarin      #E74C3C
-#define pomegranate   #C0392B
-#define clouds        #ECF0F1
-#define silver        #BDC3C7
-#define concrete      #95A5A6
-#define asbestos      #7F8C8D
-
-xterm*foreground: midnight_blue 
-xterm*background: clouds
-
-! Black
-xterm*color0: midnight_blue
-xterm*color8: wet_asphalt
-
-! Red
-xterm*color1: pomegranate
-xterm*color9: alizarin
-
-! Green
-xterm*color2: nephritis
-xterm*color10: emerald
-
-! Yellow
-xterm*color3: orange
-xterm*color11: sun_flower
-
-! Blue
-xterm*color4: belize_hole
-xterm*color12: peter_river
-
-! Magenta
-xterm*color5: wisteria
-xterm*color13: amethyst
-
-! Cyan
-xterm*color6: green_sea
-xterm*color14: turquoise
-
-! White
-xterm*color7: asbestos
-xterm*color15: concrete
+xterm*background:		#FFFFFF
+xterm*foreground:		#303030
 
 ! scrollage
 xtermxterm*saveLines: 5000
@@ -72,7 +15,7 @@ xtermxterm*cursorBlink: true
 
 ! screen stuff
 Xft.dpi: 96
-Xft.autohint: 0 
+Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
 Xft.hinting: 1

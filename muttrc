@@ -32,12 +32,12 @@ color markers       red             white
 color attachment    white           default         
 color search        brightmagenta   default
 color signature     black 	    default
-color status        brightblack	    default
-color indicator     brightblue	    default
-color tree          cyan	    default
+color status        black	    default
+color indicator     white           black
+color tree          black	    default
 
 # header colors
-color hdrdefault    black	    white
+color hdrdefault    white           black
 
 # quote colors
 color quoted        blue            default         
