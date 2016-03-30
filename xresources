@@ -1,23 +1,30 @@
 ! fonts
-!xterm*faceName: DejaVu Sans Mono:pixelsize=11
-!xterm*font: -*-fixed-medium-*-*-*-18-*-*-*-*-*-*-* 
+URxvt.font:              xft:dejavu sans mono:size=8
+URxvt.letterSpace:       -1
+
+! padding
+URxvt.scaleHeight:	 1.05
+URxvt.internalBorder:	 6
 
 ! colors
-xterm*background:		#FFFFFF
-xterm*foreground:		#303030
+URxvt.background:        #eeeeee
+URxvt.foreground:        #444444
+URxvt.cursorColor:       #999999
+URxvt.colorBD:           #000000
+URxvt.colorUL:           #333333
 
 ! scrollage
-xtermxterm*saveLines: 5000
-xtermxterm*scrollBar: false
+URxvt.saveLines:         5000
+URxvt.scrollBar:         false
 
 ! cursor
-xtermxterm*cursorBlink: true
+URxvt.cursorBlink:       true
 
 ! screen stuff
-Xft.dpi: 96
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintslight
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb
+Xft.dpi:                 96
+Xft.lcdfilter:           lcddefault
+Xft.hintstyle:   	 hintslight
+Xft.autohint: 		 false
+Xft.hinting: 		 true
+Xft.antialias: 		 true
+Xft.rgba: 		 rgb
