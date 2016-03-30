@@ -4,15 +4,23 @@ PROMPT='%B%n%b@%B%m%b (%B%~%b) '
 # term
 export TERM=screen-256color
 
-# sane ls sortin
-export LC_ALL=C
+# sane ls sorting
+alias ls='LC_COLLATE="C" ls'
 
 # better man pages
 alias man='TERM=xterm-256color COLUMNS=80 man'
 
-# Go
+# go
 export GOPATH=$HOME/Code/go
-export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin:$HOME/Apps/bin
+
+# npm
+export NPMBIN=$HOME/.npm-global/bin
+
+# my bin
+export MYBIN=$HOME/Apps/bin
+
+# bins
+export PATH=$PATH:$MYBIN:$NPMBIN:$GOPATH/bin:/usr/local/go/bin
 
 # turn off lesshst
 export LESSHISTFILE=-
