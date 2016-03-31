@@ -3,6 +3,7 @@ Host mail.gandi.net
 User wally@imwally.net
 PassCmd "cat ~/.mailpass"
 UseIMAPS yes
+RequireSSL yes
 
 IMAPStore imwally.net-remote
 Account imwally.net
@@ -10,7 +11,6 @@ Account imwally.net
 MaildirStore imwally.net-local
 Path ~/Mail/
 Inbox ~/Mail/Inbox
-Flatten .
 
 Channel imwally.net
 Master :imwally.net-remote:
