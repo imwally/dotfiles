@@ -1,7 +1,9 @@
 # mailbox
 set mbox_type = Maildir
-set folder    = "~/Mail/"
-set spoolfile = "~/Mail/Inbox"
+set folder    = $HOME/Mail
+set spoolfile =+Inbox
+set header_cache=~/.cache/mutt
+mailboxes +Inbox +Sent +Drafts +Trash  +Lists `echo ~/Mail/Lists/.[A-Z]*` +Archives `echo ~/Mail/Archives/.*[0-9]`
 
 # sending mail
 set realname = "Wally Jones"
@@ -11,12 +13,18 @@ set postponed = +Drafts
 set editor = "/usr/bin/emacs -nw"
 set sendmail = "/usr/bin/msmtp"
 
+# sidebar
+set sidebar_visible = yes
+set sidebar_delim="| "
+set sidebar_width=20
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
 # viewing mail
-unset help				# Remove top help menu
-set pager_index_lines = 10		# Split index / messages horizontally
-set pager_context = 3 			# Leave a 3 line buffer between index / messages
+#set pager_index_lines = 10		# Split index / messages horizontally
+#set pager_context = 3 			# Leave a 3 line buffer between index / messages
 set markers = no    			# Remove wrap markers
-set wrap = 80 				# Wrap all messages at 80 cols
 
 set index_format = "%Z %-20.20L    %.60s %> %10{%b %d}"
 
@@ -24,27 +32,28 @@ set index_format = "%Z %-20.20L    %.60s %> %10{%b %d}"
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archives.`date +%Y`\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
 # basic colors
-color normal        black	    default         
+color normal        default	    default
 color error         red             default         
-color tilde         black           default         
-color message       cyan            default         
-color markers       red             white           
-color attachment    white           default         
-color search        brightmagenta   default
-color signature     black 	    default
-color status        black	    default
-color indicator     white           black
-color tree          black	    default
+color tilde         default         default         
+color message       default         default         
+color markers       default         default
+color attachment    default         default         
+color search        brightdefault   default
+color signature     brightdefault   default
+color status        brightblack	    default
+color indicator     default	    white
+color tree          default	    default
+color sidebar_new   brightblack     default
 
 # header colors
-color hdrdefault    white           black
+color hdrdefault    default         white
 
 # quote colors
-color quoted        blue            default         
-color quoted1       cyan            default         
-color quoted2       yellow          default         
-color quoted3       red             default         
-color quoted4       brightred       default
+color quoted        default         default         
+color quoted1       default         default         
+color quoted2       default         default         
+color quoted3       default         default         
+color quoted4       default         default
 
 # mono colors
 mono  bold          bold
