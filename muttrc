@@ -15,7 +15,7 @@ set sendmail = "/usr/bin/msmtp"
 
 # sidebar
 set sidebar_visible = yes
-set sidebar_delim="| "
+set sidebar_delim="   "
 set sidebar_width=20
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
@@ -40,13 +40,13 @@ color markers       default         default
 color attachment    default         default         
 color search        brightdefault   default
 color signature     brightdefault   default
-color status        brightblack	    default
-color indicator     default	    white
+color status        brightdefault   default
+color indicator     black           white
 color tree          default	    default
-color sidebar_new   brightblack     default
+color sidebar_new   brightdefault   default
 
 # header colors
-color hdrdefault    default         white
+color hdrdefault    brightblack     default
 
 # quote colors
 color quoted        default         default         
