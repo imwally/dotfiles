@@ -29,7 +29,7 @@ set markers = no    			# Remove wrap markers
 set index_format = "%Z %-20.20L    %.60s %> %10{%b %d}"
 
 # archive mail
-macro index A ":set confirmappend=no delete=yes\n<save-message>=Archives.`date +%Y`\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+macro index A ":set confirmappend=no delete=yes\n<save-message>=Archives/.`date +%Y`\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
 # basic colors
 color normal        default	    default
