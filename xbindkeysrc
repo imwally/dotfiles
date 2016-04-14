@@ -6,6 +6,10 @@
 "xbacklight -dec 10%"
   XF86MonBrightnessDown
 
+# Mute volume
+"amixer set Master toggle"
+  XF86AudioMute
+
 # Decrease volume
 "amixer set Master playback 5%-"
   XF86AudioLowerVolume
