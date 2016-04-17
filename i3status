@@ -7,7 +7,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
+	colors = true
 	color_separator = "#000000"
         interval = 5
 	output_format = "dzen2"
@@ -24,9 +24,10 @@ order += "battery 0"
 order += "volume master"
 order += "tztime local"
 
+
 wireless wlan0 {
-        format_up = "NET  %quality    "
-        format_down = "NET  disconnected    "
+        format_up = "WIFI %quality (%essid)    "
+        format_down = "WIFI disconnected    "
 }
 
 ethernet eth0 {
@@ -48,7 +49,7 @@ run_watch VPN {
 }
 
 tztime local {
-        format = "    %a %H:%M "
+        format = "    %a %H:%M"
 }
 
 load {
