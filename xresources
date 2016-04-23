@@ -1,57 +1,58 @@
 ! fonts
-xterm*faceName:          xft:dejavu sans mono:size=7
+xterm*faceName:          xft:DejaVu Sans Mono:size=8
+xterm*forceBoxChars:     true
+
+! screen
+Xft.dpi:                 144
+Xft.lcdfilter:           lcddefault
+Xft.hintstyle:       	 hintnone
+Xft.autohint:		 false
+Xft.hinting:		 true
+Xft.antialias:		 true
+Xft.rgba:		 rgb
 
 ! padding
 xterm*internalBorder:	 10
-xterm*scaleHeight:       1.05
+xterm*scaleHeight:       1.01
 
 ! scrollage
-xterm*saveLines:         5000
-xterm*scrollBar:         false
+xterm*scrollbar*width:	 20
+xterm*saveLines:         10000
+xterm*scrollBar:         true
 
 ! cursor
 xterm*cursorBlink:       true
-
-! screen stuff
-Xft.dpi:                 180
-Xft.lcdfilter:           lcddefault
-Xft.hintstyle:   	 hintnone
-Xft.autohint: 		 false
-Xft.hinting: 		 true
-Xft.antialias: 		 true
-Xft.rgba: 		 rgb
+xterm*pointerShape:	 
 
 ! colors
 xterm*background:        #ffffff
-xterm*foreground:        #000000
-xterm*cursorColor:       #6495ed
-xterm*colorBDMode:       true
-xterm*colorBD:           #1874CD
-xterm*colorUL:           #333333
+xterm*foreground:        #333333
+xterm*cursorColor:       #00bfff
+xterm*colorUL:           #ffffff
 
-! Base16 Bright
-! Scheme: Chris Kempson (http://chriskempson.com)
+! Base16 Atelier Forest
+! Scheme: Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/forest)
 
-#define base00 #000000
-#define base01 #303030
-#define base02 #505050
-#define base03 #b0b0b0
-#define base04 #d0d0d0
-#define base05 #e0e0e0
-#define base06 #f5f5f5
-#define base07 #ffffff
-#define base08 #fb0120
-#define base09 #fc6d24
-#define base0A #fda331
-#define base0B #a1c659
-#define base0C #76c7b7
-#define base0D #6fb3d2
-#define base0E #d381c3
-#define base0F #be643c
+#define base00 #1b1918
+#define base01 #2c2421
+#define base02 #68615e
+#define base03 #766e6b
+#define base04 #9c9491
+#define base05 #a8a19f
+#define base06 #e6e2e0
+#define base07 #f1efee
+#define base08 #f22c40
+#define base09 #df5320
+#define base0A #d5911a
+#define base0B #5ab738
+#define base0C #00ad9c
+#define base0D #407ee7
+#define base0E #6666ea
+#define base0F #c33ff3
 
-*.foreground:   base02
-*.background:   base07
-*.cursorColor:  base02
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
 
 *.color0:       base00
 *.color1:       base08
@@ -70,12 +71,3 @@ xterm*colorUL:           #333333
 *.color13:      base06
 *.color14:      base0F
 *.color15:      base07
-
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06

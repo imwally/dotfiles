@@ -10,6 +10,9 @@ alias ls='LC_COLLATE="C" ls'
 # better man pages
 alias man='TERM=xterm-256color COLUMNS=80 man'
 
+# mono mutt
+alias mutt='TERM=vt100 mutt'
+
 # go
 export GOPATH=$HOME/Code/go
 
