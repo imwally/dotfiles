@@ -8,7 +8,7 @@ export TERM=screen-256color
 alias ls='LC_COLLATE="C" ls'
 
 # better man pages
-alias man='TERM=xterm-256color COLUMNS=80 man'
+alias man='TERM=xterm-256color man'
 
 # mono mutt
 alias mutt='TERM=vt100 mutt'
