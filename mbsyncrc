@@ -2,8 +2,8 @@ IMAPAccount imwally.net
 Host mail.gandi.net
 User wally@imwally.net
 PassCmd "cat ~/.mailpass"
-UseIMAPS yes
-RequireSSL yes
+SSLType STARTTLS
+SSLVersions TLSv1.2
 
 IMAPStore imwally.net-remote
 Account imwally.net
