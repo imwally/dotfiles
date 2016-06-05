@@ -3,7 +3,20 @@ set mbox_type = Maildir
 set folder    = $HOME/Mail
 set spoolfile =+Inbox
 set header_cache=~/.cache/mutt
-mailboxes +Inbox +Sent +Drafts +Trash  +Lists `echo ~/Mail/Lists/.[A-Z]*` +Archives `echo ~/Mail/Archives/.*[0-9]`
+mailboxes ! + `\
+for dir in ~/Mail/*; do \
+    printf "+$(basename $dir) "; \
+    if [ $(basename $dir) = "Archives" ]; then \
+        for subdir in $dir/.[0-9]*; do \
+            printf "+Archives/$(basename $subdir) "; \
+        done \
+    fi; \
+    if [ $(basename $dir) = "Lists" ]; then \
+        for subdir in $dir/.[a-z]*; do \
+            printf "+Lists/$(basename $subdir) "; \
+        done \
+    fi; \
+done`
 
 # sending mail
 set realname = "Wally Jones"
@@ -25,8 +38,9 @@ bind index,pager \CO sidebar-open
 #set pager_index_lines = 10		# Split index / messages horizontally
 #set pager_context = 3 			# Leave a 3 line buffer between index / messages
 set markers = no    			# Remove wrap markers
+set sort = threads			# Show threads
 
-set index_format = "%Z %-20.20L    %.60s %> %10{%b %d}"
+set index_format = "[%Z] %[!%b %d]   %-15.15L    %.60s"
 
 # archive mail
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archives/.`date +%Y`\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
