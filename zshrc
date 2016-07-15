@@ -10,17 +10,24 @@ alias ls='LC_COLLATE="C" ls'
 # better man pages
 alias man='TERM=xterm-256color man'
 
+# VBoxManage without the camel case bullshit
+alias vbox='VBoxManage'
+
 # go
 export GOPATH=$HOME/Code/go
+GOBIN=/usr/local/go/bin
 
 # npm
-export NPMBIN=$HOME/.npm-global/bin
+NPMBIN=$HOME/.npm-global/bin
 
 # my bin
-export MYBIN=$HOME/Apps/bin
+MYBIN=$HOME/Apps/bin
+
+# pkgsrc
+PKGBIN=/opt/pkg/bin
 
 # bins
-export PATH=$PATH:$MYBIN:$NPMBIN:$GOPATH/bin:/usr/local/go/bin
+export PATH=$PKGBIN:$PATH:/usr/sbin:/usr/local/bin:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
 
 # turn off lesshst
 export LESSHISTFILE=-
