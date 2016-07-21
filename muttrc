@@ -40,7 +40,7 @@ bind index,pager \CO sidebar-open
 set markers = no    			# Remove wrap markers
 set sort = threads			# Show threads
 
-set index_format = "[%Z] %[!%b %d]   %-15.15L    %.60s"
+set index_format = "[%Z] %[!%b %d]   %-15.15L    %s"
 
 # archive mail
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archives/.`date +%Y`\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
