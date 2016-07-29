@@ -27,7 +27,7 @@ MYBIN=$HOME/Apps/bin
 PKGBIN=/opt/pkg/bin
 
 # bins
-export PATH=$PKGBIN:$PATH:/usr/sbin:/usr/local/bin:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
+export PATH=$PKGBIN:$PATH:/sbin:/usr/sbin:/usr/local/bin:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
 
 # turn off lesshst
 export LESSHISTFILE=-
