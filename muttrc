@@ -24,7 +24,7 @@ set from = "wally@imwally.net"
 set record = +Sent
 set postponed = +Drafts
 set editor = "/usr/bin/emacs -nw"
-set sendmail = "/usr/bin/msmtp"
+set sendmail = "/usr/local/bin/msmtp"
 
 # sidebar
 set sidebar_visible = yes
