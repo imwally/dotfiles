@@ -27,18 +27,18 @@ set editor = "/usr/bin/emacs -nw"
 set sendmail = "/usr/local/bin/msmtp"
 
 # sidebar
-set sidebar_visible = yes
-set sidebar_delim="   "
-set sidebar_width=20
-bind index,pager \CP sidebar-prev
-bind index,pager \CN sidebar-next
-bind index,pager \CO sidebar-open
+#set sidebar_visible = yes
+#set sidebar_delim="   "
+#set sidebar_width=20
+#bind index,pager \CP sidebar-prev
+#bind index,pager \CN sidebar-next
+#bind index,pager \CO sidebar-open
 
 # viewing mail
-#set pager_index_lines = 10		# Split index / messages horizontally
-#set pager_context = 3 			# Leave a 3 line buffer between index / messages
+set pager_index_lines = 10		# Split index / messages horizontally
+set pager_context = 3 			# Leave a 3 line buffer between index / messages
 set markers = no    			# Remove wrap markers
-set sort = threads			# Show threads
+set sort = threads			    # Show threads
 
 set index_format = "[%Z] %[!%b %d]   %-15.15L    %s"
 
@@ -54,13 +54,13 @@ color markers       default         default
 color attachment    default         default         
 color search        brightdefault   default
 color signature     brightdefault   default
-color status        brightdefault   default
+color status        brightwhite     blue 
 color indicator     black           white
-color tree          default	    default
-color sidebar_new   brightdefault   default
+color tree          default	        default
+#color sidebar_new   brightdefault   default
 
 # header colors
-color hdrdefault    brightblack     default
+color hdrdefault    brightdefault   default 
 
 # quote colors
 color quoted        default         default         
