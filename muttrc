@@ -3,20 +3,11 @@ set mbox_type = Maildir
 set folder    = $HOME/Mail
 set spoolfile =+Inbox
 set header_cache=~/.cache/mutt
-mailboxes ! + `\
-for dir in ~/Mail/*; do \
-    printf "+$(basename $dir) "; \
-    if [ $(basename $dir) = "Archives" ]; then \
-        for subdir in $dir/.[0-9]*; do \
-            printf "+Archives/$(basename $subdir) "; \
-        done \
-    fi; \
-    if [ $(basename $dir) = "Lists" ]; then \
-        for subdir in $dir/.[a-z]*; do \
-            printf "+Lists/$(basename $subdir) "; \
-        done \
-    fi; \
-done`
+mailboxes =Inbox
+mailboxes =Archive
+mailboxes =Sent
+mailboxes =Draft
+mailboxes =Trash
 
 # sending mail
 set realname = "Wally Jones"
@@ -27,12 +18,18 @@ set editor = "/usr/bin/emacs -nw"
 set sendmail = "/usr/local/bin/msmtp"
 
 # sidebar
-#set sidebar_visible = yes
-#set sidebar_delim="   "
-#set sidebar_width=20
-#bind index,pager \CP sidebar-prev
-#bind index,pager \CN sidebar-next
-#bind index,pager \CO sidebar-open
+set sidebar_visible = yes
+set sidebar_width = 15 
+set sidebar_divider_char ="  "
+set sidebar_folder_indent = yes 
+set sidebar_indent_string= " "
+set sidebar_format = "%B%*"
+set sidebar_short_path = yes
+bind index,pager B sidebar-toggle-visible
+
+bind index,pager \CO sidebar-open
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
 
 # viewing mail
 set pager_index_lines = 10		# Split index / messages horizontally
@@ -43,7 +40,7 @@ set sort = threads			    # Show threads
 set index_format = "[%Z] %[!%b %d]   %-15.15L    %s"
 
 # archive mail
-macro index A ":set confirmappend=no delete=yes\n<save-message>=Archives/.`date +%Y`\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
 # basic colors
 color normal        default	    default
@@ -57,17 +54,21 @@ color signature     brightdefault   default
 color status        brightwhite     blue 
 color indicator     black           white
 color tree          default	        default
-#color sidebar_new   brightdefault   default
+
+# sidebar colors
+color sidebar_indicator   brightdefault   default
+color sidebar_highlight   black           white 
+color sidebar_new         brightdefault   default
 
 # header colors
 color hdrdefault    brightdefault   default 
 
 # quote colors
-color quoted        default         default         
-color quoted1       default         default         
-color quoted2       default         default         
-color quoted3       default         default         
-color quoted4       default         default
+color quoted        blue            default         
+color quoted1       green           default         
+color quoted2       red             default         
+color quoted3       yellow          default         
+color quoted4       magenta         default
 
 # mono colors
 mono  bold          bold
