@@ -35,12 +35,17 @@ bind index,pager \CN sidebar-next
 set pager_index_lines = 10		# Split index / messages horizontally
 set pager_context = 3 			# Leave a 3 line buffer between index / messages
 set markers = no    			# Remove wrap markers
-set sort = threads			    # Show threads
+set sort = threads			# Show threads
 
 set index_format = "[%Z] %[!%b %d]   %-15.15L    %s"
 
 # archive mail
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+
+# sidebar colors
+color sidebar_indicator   brightdefault   default
+color sidebar_highlight   black           white 
+color sidebar_new         brightdefault   default
 
 # basic colors
 color normal        default	    default
@@ -53,12 +58,7 @@ color search        brightdefault   default
 color signature     brightdefault   default
 color status        brightwhite     blue 
 color indicator     black           white
-color tree          default	        default
-
-# sidebar colors
-color sidebar_indicator   brightdefault   default
-color sidebar_highlight   black           white 
-color sidebar_new         brightdefault   default
+color tree          default	    default
 
 # header colors
 color hdrdefault    brightdefault   default 
