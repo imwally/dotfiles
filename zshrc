@@ -10,6 +10,9 @@ alias ls='LC_COLLATE="C" ls'
 # better man pages
 alias man='TERM=xterm-256color man'
 
+# better emacs
+alias emacs='TERM=xterm-256color emacs -nw'
+
 # VBoxManage without the camel case bullshit
 alias vbox='VBoxManage'
 
