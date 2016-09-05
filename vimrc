@@ -7,3 +7,6 @@ set shiftround
 set expandtab
 
 highlight LineNr ctermfg=darkgreen
+
+execute pathogen#infect()
+filetype plugin indent on
