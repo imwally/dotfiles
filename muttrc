@@ -1,4 +1,5 @@
 # mailbox
+set beep_new  = yes
 set mbox_type = Maildir
 set folder    = $HOME/Mail
 set spoolfile =+Inbox
