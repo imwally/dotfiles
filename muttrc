@@ -17,6 +17,7 @@ set record = +Sent
 set postponed = +Drafts
 set editor = "/usr/bin/emacs -nw"
 set sendmail = "/usr/local/bin/msmtp"
+set user_agent = no
 
 # sidebar
 set sidebar_visible = no
