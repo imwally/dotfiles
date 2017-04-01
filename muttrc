@@ -55,7 +55,7 @@ color error         red             default
 color tilde         default         default         
 color message       default         default         
 color markers       default         default
-color attachment    default         default         
+color attachment    white           default
 color search        brightdefault   default
 color signature     brightdefault   default
 color status        brightwhite     blue 
