@@ -4,11 +4,15 @@ set mbox_type = Maildir
 set folder    = $HOME/Mail
 set spoolfile =+Inbox
 set header_cache=~/.cache/mutt
+set mark_old = no
+set mask =""
 mailboxes =Inbox
 mailboxes =Archive
 mailboxes =Sent
-mailboxes =Draft
+mailboxes =Drafts
+mailboxes =Spam
 mailboxes =Trash
+mailboxes `find ~/Mail/Lists -type d -maxdepth 1 -name '.*' | tr '\n' ' '`
 
 # sending mail
 set realname = "Wally Jones"
@@ -20,15 +24,14 @@ set sendmail = "/usr/local/bin/msmtp"
 set user_agent = no
 
 # sidebar
-set sidebar_visible = no
+set sidebar_visible = yes
 set sidebar_width = 15 
-set sidebar_divider_char ="  "
+set sidebar_divider_char ="| "
 set sidebar_folder_indent = yes 
 set sidebar_indent_string= " "
-set sidebar_format = "%B%*"
+set sidebar_format = "%B%* %?N?(%N)?"
 set sidebar_short_path = yes
 bind index,pager B sidebar-toggle-visible
-
 bind index,pager \CO sidebar-open
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
@@ -45,9 +48,9 @@ set index_format = "[%Z] %[!%b %d]   %-15.15L    %s"
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
 # sidebar colors
-color sidebar_indicator   brightdefault   default
-color sidebar_highlight   black           white 
-color sidebar_new         brightdefault   default
+color sidebar_new	brightdefault	default
+color sidebar_indicator brightwhite	blue
+color sidebar_highlight default		white
 
 # basic colors
 color normal        default	    default
