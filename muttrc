@@ -19,13 +19,13 @@ set realname = "Wally Jones"
 set from = "wally@imwally.net"
 set record = +Sent
 set postponed = +Drafts
-set editor = "/usr/bin/emacs -nw"
+set editor = "/usr/local/bin/emacs -nw"
 set sendmail = "/usr/local/bin/msmtp"
 set user_agent = no
 
 # sidebar
 set sidebar_visible = yes
-set sidebar_width = 15 
+set sidebar_width = 18
 set sidebar_divider_char ="| "
 set sidebar_folder_indent = yes 
 set sidebar_indent_string= " "
@@ -42,7 +42,7 @@ set pager_context = 3 			# Leave a 3 line buffer between index / messages
 set markers = no    			# Remove wrap markers
 set sort = threads			# Show threads
 
-set index_format = "[%Z] %[!%b %d]   %-15.15L    %s"
+set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
 
 # archive mail
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
