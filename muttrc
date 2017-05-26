@@ -39,7 +39,7 @@ bind index,pager \CN sidebar-next
 
 # viewing mail
 set pager_index_lines = 10		# Split index / messages horizontally
-set pager_context = 3 			# Leave a 3 line buffer between index / messages
+set pager_context = 10			# Leave a 3 line buffer between index / messages
 set markers = no    			# Remove wrap markers
 set sort = threads			# Show threads
 
