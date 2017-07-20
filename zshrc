@@ -11,7 +11,7 @@ alias ls='LC_COLLATE="C" ls'
 alias man='TERM=xterm-256color man'
 
 # better emacs
-alias emacs='TERM=xterm-256color /usr/local/bin/emacs -nw'
+alias emacs='TERM=xterm-256color /usr/local/bin/emacs -nw -bg gray00'
 
 # VBoxManage without the camel case bullshit
 alias vbox='VBoxManage'
@@ -26,11 +26,8 @@ NPMBIN=$HOME/.npm-global/bin
 # my bin
 MYBIN=$HOME/Apps/bin
 
-# pkgsrc
-PKGBIN=/opt/pkg/bin
-
 # bins
-export PATH=$PKGBIN:$PATH:/sbin:/usr/sbin:/usr/local/bin:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
+export PATH=$PATH:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
 
 # turn off lesshst
 export LESSHISTFILE=-
