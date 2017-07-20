@@ -26,8 +26,10 @@ NPMBIN=$HOME/.npm-global/bin
 # my bin
 MYBIN=$HOME/Apps/bin
 
-# bins
-export PATH=$PATH:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
+# bins (guard against tmux duplication)
+if [ -z $TMUX ]; then
+   export PATH=$PATH:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
+fi
 
 # turn off lesshst
 export LESSHISTFILE=-
