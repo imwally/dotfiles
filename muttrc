@@ -49,9 +49,9 @@ set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
 # sidebar colors
-color sidebar_new	brightdefault	default
-color sidebar_indicator brightwhite	blue
-color sidebar_highlight default		white
+color sidebar_new		brightdefault	 default
+color sidebar_indicator   	brightwhite	 black
+color sidebar_highlight   	default	 	 white
 
 # basic colors
 color normal        default	    default
@@ -62,7 +62,7 @@ color markers       default         default
 color attachment    white           default
 color search        brightdefault   default
 color signature     brightdefault   default
-color status        brightwhite     blue 
+color status        brightwhite     black
 color indicator     black           white
 color tree          default	    default
 
