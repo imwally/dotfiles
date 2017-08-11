@@ -48,6 +48,12 @@ set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
 # archive mail
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
+# extract urls from shitty html mail
+macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+
+# viewing shitty html mail
+auto_view text/html
+
 # sidebar colors
 color sidebar_new		brightdefault	 default
 color sidebar_indicator   	brightwhite	 black
