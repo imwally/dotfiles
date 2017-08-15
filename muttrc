@@ -54,6 +54,9 @@ macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 # viewing shitty html mail
 auto_view text/html
 
+# but please, prefer plaintext
+alternative_order text/plain text/html
+
 # sidebar colors
 color sidebar_new		brightdefault	 default
 color sidebar_indicator   	brightwhite	 black
