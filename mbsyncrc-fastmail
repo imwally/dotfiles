@@ -11,6 +11,7 @@ Account imwally.net
 MaildirStore imwally.net-local
 Path ~/Mail/
 Inbox ~/Mail/Inbox
+SubFolders Legacy
 
 Channel imwally.net
 Master :imwally.net-remote:
