@@ -49,7 +49,8 @@ set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
 macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
 # extract urls from shitty html mail
-macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+set pipe_decode = yes
+macro pager \cb <pipe-entry>'linkview'<enter> 'Follow links with urlview'
 
 # viewing shitty html mail
 auto_view text/html
