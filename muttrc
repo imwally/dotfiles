@@ -50,7 +50,7 @@ macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-m
 
 # extract urls from shitty html mail
 set pipe_decode = yes
-macro pager \cb <pipe-entry>'linkview'<enter> 'Follow links with urlview'
+macro index,pager \cb <pipe-entry>'linkview'<enter> 'Follow links with linkview'
 
 # viewing shitty html mail
 auto_view text/html
