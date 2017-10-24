@@ -46,7 +46,7 @@ set sort = threads			# Show threads
 set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
 
 # archive mail
-macro index A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+macro index,pager A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
 
 # extract urls from shitty html mail
 set pipe_decode = yes
