@@ -1,7 +1,7 @@
 # mailbox
 set beep_new  = yes
 set mbox_type = Maildir
-set folder    = $HOME/Mail
+set folder    = $HOME/mail
 set spoolfile =+Inbox
 set header_cache=~/.cache/mutt
 set mark_old = no
@@ -13,7 +13,7 @@ mailboxes =Sent
 mailboxes =Drafts
 mailboxes =Spam
 mailboxes =Trash
-mailboxes `find ~/Mail/Lists -type d -maxdepth 1 -name '.*' | tr '\n' ' '`
+mailboxes `find ~/mail/Lists -type d -maxdepth 1 -name '.*' | tr '\n' ' '`
 
 # sending mail
 set realname = "Wally Jones"
