@@ -17,14 +17,14 @@ alias emacs='TERM=xterm-256color /usr/local/bin/emacs -nw -bg gray00'
 alias vbox='VBoxManage'
 
 # go
-export GOPATH=$HOME/Code/go
+export GOPATH=$HOME/src/go
 GOBIN=/usr/local/go/bin
 
 # npm
 NPMBIN=$HOME/.npm-global/bin
 
 # my bin
-MYBIN=$HOME/Apps/bin
+MYBIN=$HOME/bin
 
 # bins (guard against tmux duplication)
 if [ -z $TMUX ]; then
