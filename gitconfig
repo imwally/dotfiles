@@ -1,0 +1,7 @@
+[user]
+  	name = Wally Jones
+	email = wally@imwally.net
+[push]
+	default = simple
+[color]
+    	ui = false
