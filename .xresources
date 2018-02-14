@@ -3,13 +3,13 @@ xterm*faceName:          xft:DejaVu Sans Mono:size=8
 xterm*forceBoxChars:     true
 
 ! screen
-Xft.dpi:                 144
-Xft.lcdfilter:           lcddefault
-Xft.hintstyle:       	 hintnone
-Xft.autohint:		 false
-Xft.hinting:		 true
-Xft.antialias:		 true
-Xft.rgba:		 rgb
+!Xft.dpi:                 120
+!Xft.lcdfilter:           lcddefault
+!Xft.hintstyle:       	 hintnone
+!Xft.autohint:		 false
+!Xft.hinting:		 true
+!Xft.antialias:		 true
+!Xft.rgba:		 rgb
 
 ! padding
 xterm*internalBorder:	 10
