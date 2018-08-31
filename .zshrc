@@ -23,12 +23,15 @@ GOBIN=/usr/local/go/bin
 # npm
 NPMBIN=$HOME/.npm-global/bin
 
+# rust
+RUSTBIN=$HOME/.cargo
+
 # my bin
 MYBIN=$HOME/bin
 
 # bins (guard against tmux duplication)
 if [ -z $TMUX ]; then
-   export PATH=$PATH:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin
+   export PATH=$PATH:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin:$RUSTBIN
 fi
 
 # turn off lesshst
