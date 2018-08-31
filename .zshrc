@@ -24,7 +24,7 @@ GOBIN=/usr/local/go/bin
 NPMBIN=$HOME/.npm-global/bin
 
 # rust
-RUSTBIN=$HOME/.cargo
+RUSTBIN=$HOME/.cargo/bin
 
 # my bin
 MYBIN=$HOME/bin
