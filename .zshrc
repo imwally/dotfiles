@@ -1,5 +1,5 @@
 # name on host in curdir 
-PROMPT='%n@%m (%B%~%b) '
+PROMPT='%B%~%b %# '
 
 # term
 export TERM=screen-256color
