@@ -18,6 +18,7 @@ mailboxes `find ~/mail/Lists -type d -maxdepth 1 -name '.*' | tr '\n' ' '`
 # sending mail
 set realname = "Wally Jones"
 set from = "wally@imwally.net"
+set sig_dashes = no
 set record = +Sent
 set postponed = +Drafts
 set editor = "/usr/local/bin/emacs -nw"
@@ -42,6 +43,7 @@ set pager_index_lines = 10		# Split index / messages horizontally
 set pager_context = 10			# Leave a 3 line buffer between index / messages
 set markers = no    			# Remove wrap markers
 set sort = threads			# Show threads
+set status_on_top = yes			# Pretty self-explanatory
 
 set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
 
