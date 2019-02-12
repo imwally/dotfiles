@@ -15,6 +15,9 @@ mailboxes =Spam
 mailboxes =Trash
 mailboxes `find ~/mail/Lists -type d -maxdepth 1 -name '.*' | tr '\n' ' '`
 
+# delete by moving to trash
+set trash = "=Trash"
+
 # sending mail
 set realname = "Wally Jones"
 set from = "wally@imwally.net"
