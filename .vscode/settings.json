@@ -8,9 +8,12 @@
 
     // Dress it up
     "workbench.colorTheme": "Visual Studio Light",
+    "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
     "workbench.activityBar.visible": true,
     "editor.minimap.enabled": false,
     "editor.fontFamily": "SF Mono",
     "editor.fontSize": 11,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
 }
