@@ -1,0 +1,16 @@
+{
+    // Don't spy on me
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    // If I want it, I'll look for it
+    "extensions.ignoreRecommendations": true,
+
+    // Dress it up
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "SF Mono",
+    "editor.fontSize": 11,
+}
