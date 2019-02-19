@@ -42,11 +42,12 @@ bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 
 # viewing mail
-set pager_index_lines = 10		# Split index / messages horizontally
-set pager_context = 10			# Leave a 3 line buffer between index / messages
-set markers = no    			# Remove wrap markers
-set sort = threads			# Show threads
-set status_on_top = yes			# Pretty self-explanatory
+set pager_index_lines = 10      # Split index / messages horizontally
+set pager_context = 10          # Leave a 3 line buffer between index / messages
+set markers = no                # Remove wrap markers
+set sort = threads              # Show threads
+set status_on_top = yes         # Pretty self-explanatory
+set help = no
 
 set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
 
@@ -64,12 +65,12 @@ auto_view text/html
 alternative_order text/plain text/html
 
 # sidebar colors
-color sidebar_new		brightdefault	 default
-color sidebar_indicator   	brightwhite	 black
-color sidebar_highlight   	default	 	 white
+color sidebar_new           brightdefault   default
+color sidebar_indicator     brightwhite     black
+color sidebar_highlight     default         white
 
 # basic colors
-color normal        default	    default
+color normal        default         default
 color error         red             default         
 color tilde         default         default         
 color message       default         default         
@@ -79,7 +80,7 @@ color search        brightdefault   default
 color signature     brightdefault   default
 color status        brightwhite     black
 color indicator     black           white
-color tree          default	    default
+color tree          default         default
 
 # header colors
 color hdrdefault    brightdefault   default 
