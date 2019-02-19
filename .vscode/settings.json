@@ -10,7 +10,7 @@
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
     "editor.fontFamily": "SF Mono",
     "editor.fontSize": 11,
