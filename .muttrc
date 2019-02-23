@@ -20,7 +20,7 @@ set trash = "=Trash"
 
 # sending mail
 set realname = "Wally Jones"
-set from = "wally@imwally.net"
+set from = "wally@wallyjones.com"
 set sig_dashes = no
 set record = +Sent
 set postponed = +Drafts

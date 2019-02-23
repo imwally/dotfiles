@@ -1,20 +1,24 @@
-IMAPAccount imwally.net
+CopyArrivalDate yes
+
+IMAPAccount wallyjones.com
 Host imap.fastmail.com
-User wally@imwally.net
+User wally@wallyjones.com
 PassCmd "security find-internet-password -s imap.fastmail.com -w"
 SSLType IMAPS
 SSLVersions TLSv1.2
 
-IMAPStore imwally.net-remote
-Account imwally.net
+IMAPStore wallyjones.com-remote
+Account wallyjones.com
 
-MaildirStore imwally.net-local
+MaildirStore wallyjones.com-local
 Path ~/mail/
 Inbox ~/mail/Inbox
 SubFolders Legacy
 
-Channel imwally.net
-Master :imwally.net-remote:
-Slave :imwally.net-local:
+Channel wallyjones.com
+Master :wallyjones.com-remote:
+Slave :wallyjones.com-local:
 Patterns *
+Sync All
+SyncState *
 Create Both
