@@ -7,7 +7,7 @@
     "extensions.ignoreRecommendations": true,
 
     // Dress it up
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Light+ Tweaked",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
     "workbench.activityBar.visible": false,
@@ -16,4 +16,5 @@
     "editor.fontSize": 11,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
+    "diffEditor.renderSideBySide": false,
 }
