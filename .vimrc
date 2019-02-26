@@ -9,7 +9,4 @@ set expandtab
 " backspace like a normal editor, please
 set backspace=indent,eol,start
 
-highlight LineNr ctermfg=darkgreen
-
-execute pathogen#infect()
-filetype plugin indent on
+highlight LineNr ctermfg=gray
