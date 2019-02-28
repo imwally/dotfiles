@@ -1,5 +1,9 @@
 syntax off
 
+filetype on
+filetype plugin indent on
+filetype plugin on
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
