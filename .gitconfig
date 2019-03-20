@@ -4,4 +4,7 @@
 [push]
 	default = simple
 [color]
-    	ui = false
+   	ui = true
+[color "diff"]
+	old = "#999999 #cccccc"
+	new = "#000000 #cccccc"
