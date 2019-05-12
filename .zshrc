@@ -29,9 +29,12 @@ RUSTBIN=$HOME/.cargo/bin
 # my bin
 MYBIN=$HOME/bin
 
+# homebrew sbin
+HOMEBREWSBIN=/usr/local/sbin
+
 # bins (guard against tmux duplication)
 if [ -z $TMUX ]; then
-   export PATH=$PATH:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin:$RUSTBIN
+   export PATH=$PATH:$HOMEBREWSBIN:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin:$RUSTBIN
 fi
 
 # turn off lesshst
