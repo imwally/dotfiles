@@ -49,7 +49,7 @@ set sort = threads              # Show threads
 set status_on_top = yes         # Pretty self-explanatory
 set help = no
 
-set index_format = "[%Z] %[!%b %d]  %-15.15L %s"
+set index_format = "[%Z] %[!%Y %b %d]  %-15.15L %s"
 
 # archive mail
 macro index,pager A ":set confirmappend=no delete=yes\n<save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
