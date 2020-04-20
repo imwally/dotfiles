@@ -1,4 +1,7 @@
 {
+    // No gooey, use JSON
+    "workbench.settings.editor": "json",
+    
     // Don't spy on me
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -7,14 +10,11 @@
     "extensions.ignoreRecommendations": true,
 
     // Dress it up
-    "workbench.colorTheme": "Light+ Tweaked",
+    "workbench.colorTheme": "Default Light+",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false,
     "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
     "editor.fontFamily": "SF Mono",
     "editor.fontSize": 11,
-    "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.horizontal": "hidden",
     "diffEditor.renderSideBySide": false,
 }
