@@ -8,6 +8,7 @@
 
     // If I want it, I'll look for it
     "extensions.ignoreRecommendations": true,
+    "window.restoreWindows": "none",
 
     // Dress it up
     "workbench.colorTheme": "Default Light+",
@@ -17,4 +18,8 @@
     "editor.fontFamily": "SF Mono",
     "editor.fontSize": 11,
     "diffEditor.renderSideBySide": false,
+
+    // Language specific stuff
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
 }
