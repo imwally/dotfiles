@@ -1,4 +1,7 @@
-Dotfiles
-========
+# Dotfiles
 
-This is just a simple repo for my various UNIX configuration files. If you find them useful then by all means use them and have fun.
+Config the UNIX.
+
+## Get Up and Running
+
+`curl -sL https://wallyjones.com/up | sh` 
