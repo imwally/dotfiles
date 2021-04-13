@@ -16,8 +16,8 @@ Inbox ~/mail/Inbox
 SubFolders Legacy
 
 Channel wallyjones.com
-Master :wallyjones.com-remote:
-Slave :wallyjones.com-local:
+Far :wallyjones.com-remote:
+Near :wallyjones.com-local:
 Patterns *
 Sync All
 SyncState *
