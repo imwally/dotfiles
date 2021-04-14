@@ -32,10 +32,13 @@ MYBIN=$HOME/bin
 # homebrew sbin
 HOMEBREWSBIN=/usr/local/sbin
 
+# homebrew arm
+BREWARM=/opt/homebrew/bin
+
 # bins (guard against tmux duplication)
-if [ -z $TMUX ]; then
-   export PATH=$PATH:$HOMEBREWSBIN:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin:$RUSTBIN
-fi
+#if [ -z $TMUX ]; then
+   export PATH=$BREWARM:$PATH:$HOMEBREWSBIN:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin:$RUSTBIN
+#fi
 
 # turn off lesshst
 export LESSHISTFILE=-
@@ -49,3 +52,7 @@ compinit
 
 # set break points (stop at -,/,.) for backwards kill (C-w)
 WORDCHARS='*?[]~=&;!#$%^(){}<>'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
