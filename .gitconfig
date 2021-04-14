@@ -8,3 +8,5 @@
 [color "diff"]
 	old = "#999999 #cccccc"
 	new = "#000000 #cccccc"
+[init]
+	defaultBranch = main
