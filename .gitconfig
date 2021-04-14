@@ -10,3 +10,5 @@
 	new = "#000000 #cccccc"
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true
