@@ -22,4 +22,5 @@
     // Language specific stuff
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
 }
