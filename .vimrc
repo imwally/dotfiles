@@ -11,6 +11,9 @@ set shiftround
 set expandtab
 set number
 
+" weird switch case indenting fix
+set cinoptions+=:0
+
 " backspace like a normal editor, please
 set backspace=indent,eol,start
 
