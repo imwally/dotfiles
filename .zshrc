@@ -11,7 +11,7 @@ alias ls='LC_COLLATE="C" ls'
 alias man='TERM=xterm-256color man'
 
 # better emacs
-alias emacs='TERM=xterm-256color /usr/local/bin/emacs -nw -bg gray00'
+alias emacs='TERM=xterm-256color /opt/homebrew/bin/emacs -nw -bg gray00'
 
 # VBoxManage without the camel case bullshit
 alias vbox='VBoxManage'
