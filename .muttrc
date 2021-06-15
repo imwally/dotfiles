@@ -24,8 +24,8 @@ set from = "wally@wallyjones.com"
 set sig_dashes = no
 set record = +Sent
 set postponed = +Drafts
-set editor = "/usr/local/bin/mg"
-set sendmail = "/usr/local/bin/msmtp"
+set editor = "/opt/homebrew/bin/emacs"
+set sendmail = "/opt/homebrew/bin/msmtp"
 set user_agent = no
 
 # sidebar
