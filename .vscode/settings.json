@@ -23,4 +23,15 @@
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     "go.toolsManagement.autoUpdate": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "go"
+    ],
 }
