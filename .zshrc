@@ -1,6 +1,10 @@
 # name on host in curdir 
 PROMPT='%B%~%b %# '
 
+# give me that vimness
+EDITOR="vim"
+set -o vi
+
 # term
 export TERM=screen-256color
 
@@ -34,6 +38,11 @@ HOMEBREWSBIN=/usr/local/sbin
 
 # homebrew arm
 BREWARM=/opt/homebrew/bin
+
+# plan.cat
+function .plan() {
+	T=$(mktemp) && curl -so $T https://plan.cat/~wally && $EDITOR $T && curl -su wally -F "plan=<$T" https://plan.cat/stdin
+}
 
 # bins (guard against tmux duplication)
 #if [ -z $TMUX ]; then
