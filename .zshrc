@@ -7,6 +7,7 @@ set -o vi
 
 # term
 export TERM=screen-256color
+export NO_COLOR=1
 
 # sane ls sorting
 alias ls='LC_COLLATE="C" ls'
