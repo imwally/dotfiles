@@ -1,9 +1,8 @@
 # name on host in curdir 
 PROMPT='%B%~%b %# '
 
-# give me that vimness
-EDITOR="vim"
-set -o vi
+# gimme that emacness
+EDITOR="emacs"
 
 # term
 export TERM=screen-256color
