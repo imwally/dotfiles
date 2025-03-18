@@ -1,14 +1,24 @@
 [user]
   	name = Wally Jones
 	email = wally@wallyjones.com
+
 [push]
 	default = simple
+
 [color]
    	ui = true
+
 [color "diff"]
-	old = "#999999 #cccccc"
-	new = "#000000 #cccccc"
+	old = black dim
+	new = black bold
+
+[color "status"]
+       added = black bold
+       deleted = black dim
+       changed = black bold
+
 [init]
 	defaultBranch = main
+
 [pull]
 	rebase = true
