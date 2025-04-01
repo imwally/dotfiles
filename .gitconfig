@@ -1,5 +1,5 @@
 [user]
-  	name = Wally Jones
+  	name  = Wally Jones
 	email = wally@wallyjones.com
 
 [push]
@@ -13,7 +13,7 @@
 	new = black bold
 
 [color "status"]
-       added = black bold
+       added   = black bold
        deleted = black dim
        changed = black bold
 
