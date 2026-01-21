@@ -44,9 +44,10 @@ function .plan() {
 	T=$(mktemp) && curl -so $T https://plan.cat/~wally && $EDITOR $T && curl -su wally -F "plan=<$T" https://plan.cat/stdin
 }
 
+
 # bins (guard against tmux duplication)
 #if [ -z $TMUX ]; then
-   export PATH=$BREWARM:$PATH:$HOMEBREWSBIN:$MYBIN:$NPMBIN:$GOBIN:$GOPATH/bin:$RUSTBIN
+   export PATH=$BREWARM:$PATH:$HOMEBREWSBIN:$MYBIN:$HOME/.asdf/shims:$NPMBIN:$GOBIN:$GOPATH/bin:$RUSTBIN
 #fi
 
 # turn off lesshst
