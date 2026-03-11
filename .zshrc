@@ -30,6 +30,9 @@ NPMBIN=$HOME/.npm-global/bin
 # rust
 RUSTBIN=$HOME/.cargo/bin
 
+# java (it's for crafting interpreters, I swear)
+. ~/.asdf/plugins/java/set-java-home.zsh
+
 # my bin
 MYBIN=$HOME/bin
 
