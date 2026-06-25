@@ -8,6 +8,9 @@ EDITOR="emacs"
 export TERM=screen-256color
 export NO_COLOR=1
 
+# date my history
+export HISTTIMEFORMAT="%y-%m-%d %T: "
+
 # sane ls sorting
 alias ls='LC_COLLATE="C" ls'
 
